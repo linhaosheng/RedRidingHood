@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/main"
+    android:fitsSystemWindows="true">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <include layout="@layout/include_toolbar" />
+
+        <android.support.v4.widget.SwipeRefreshLayout
+            android:id="@+id/hot_new_animate_refresh"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <FrameLayout
+                android:id="@+id/hot_new_animate_fragment"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+        </android.support.v4.widget.SwipeRefreshLayout>
+    </LinearLayout>
+
+    <com.roughike.bottombar.BottomBar
+        android:id="@+id/hot_new_animate_bottom_bar"
+        android:layout_width="match_parent"
+        android:layout_height="70dip"
+        app:bb_activeTabColor="@color/colorPrimary"
+        app:bb_tabXmlResource="@xml/bottombar_tabs"
+        android:layout_alignParentBottom="true">
+    </com.roughike.bottombar.BottomBar>
+    </RelativeLayout>
+</android.support.design.widget.CoordinatorLayout>

@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="utf-8"?>
+<linhao.redridinghood.widget.ScrimInsetsScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    android:layout_gravity="start"
+    android:background="?attr/widgetBackground"
+    android:scrollbars="none"
+    app:appInsetForeground="@color/translucent_status">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="?attr/colorPrimary">
+
+            <ImageView
+                android:id="@+id/img_nav_top_background"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_alignBottom="@+id/layout_info"
+                android:src="@drawable/main_nav_header_bg"
+                android:scaleType="centerCrop"
+                android:adjustViewBounds="true" />
+
+            <View
+                android:id="@+id/nav_adapt_status_bar"
+                android:layout_width="match_parent"
+                android:layout_height="0dp" />
+
+            <LinearLayout
+                android:id="@+id/layout_info"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/nav_adapt_status_bar"
+                android:padding="16dp"
+                android:orientation="vertical">
+
+
+                <TextView
+                    android:id="@+id/tv_login_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="16dp"
+                    android:textColor="@android:color/white"
+                    android:textSize="16sp"
+                    tools:text="TakWolf" />
+
+                <TextView
+                    android:id="@+id/tv_score"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="4dp"
+                    android:textColor="@color/text_secondary_dark"
+                    android:textSize="14sp"
+                    tools:text="积分：0" />
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/btn_logout"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_alignBottom="@+id/layout_info"
+                android:layout_margin="16dp"
+                android:paddingTop="8dp"
+                android:paddingBottom="8dp"
+                android:paddingLeft="16dp"
+                android:paddingRight="16dp"
+                android:text="@string/logout"
+                android:textColor="@color/text_secondary_dark"
+                android:textSize="14sp"
+                android:background="@drawable/button_transparent_image" />
+
+            <ImageView
+                android:id="@+id/btn_theme_dark"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_alignTop="@+id/layout_info"
+                android:layout_margin="16dp"
+                android:padding="16dp"
+                android:src="@drawable/ic_brightness_3_white_24dp"
+                android:scaleType="center"
+                android:adjustViewBounds="true"
+                android:background="@drawable/button_transparent_image" />
+
+        </RelativeLayout>
+
+        <View style="@style/AppWidget.ItemGap" />
+
+        <CheckedTextView style="@style/AppWidget.NavigationItem"
+            android:id="@+id/week_update"
+            android:drawableStart="@drawable/main_nav_ic_all"
+            android:drawableLeft="@drawable/main_nav_ic_all"
+            android:text="@string/week_update"
+            android:checked="true" />
+
+        <View style="@style/AppWidget.NavigationItemDeepLineGap" />
+
+        <CheckedTextView style="@style/AppWidget.NavigationItem"
+            android:id="@+id/recent_update"
+            android:drawableStart="@drawable/main_nav_ic_good"
+            android:drawableLeft="@drawable/main_nav_ic_good"
+            android:text="@string/recent_update" />
+
+        <View style="@style/AppWidget.NavigationItemDeepLineGap" />
+
+        <CheckedTextView style="@style/AppWidget.NavigationItem"
+            android:id="@+id/hot_new_animate"
+            android:drawableStart="@drawable/main_nav_ic_share"
+            android:drawableLeft="@drawable/main_nav_ic_share"
+            android:text="@string/hot_new_animate" />
+
+        <View style="@style/AppWidget.NavigationItemDeepLineGap" />
+
+        <CheckedTextView style="@style/AppWidget.NavigationItem"
+            android:id="@+id/comic_list"
+            android:drawableStart="@drawable/main_nav_ic_ask"
+            android:drawableLeft="@drawable/main_nav_ic_ask"
+            android:text="@string/comic_list" />
+
+        <View style="@style/AppWidget.NavigationItemDeepLineGap" />
+
+        <CheckedTextView style="@style/AppWidget.NavigationItem"
+            android:id="@+id/end_comic"
+            android:drawableStart="@drawable/main_nav_ic_ask"
+            android:drawableLeft="@drawable/main_nav_ic_ask"
+            android:text="@string/end_comic" />
+
+        <View style="@style/AppWidget.NavigationItemDeepLineGap" />
+
+        <CheckedTextView style="@style/AppWidget.NavigationItem"
+            android:id="@+id/news_list"
+            android:drawableStart="@drawable/main_nav_ic_job"
+            android:drawableLeft="@drawable/main_nav_ic_job"
+            android:text="@string/news_list" />
+
+        <View style="@style/AppWidget.NavigationItemDeepLineGap" />
+
+        <CheckedTextView style="@style/AppWidget.NavigationItem"
+            android:id="@+id/ranking"
+            android:drawableStart="@drawable/main_nav_ic_job"
+            android:drawableLeft="@drawable/main_nav_ic_job"
+            android:text="@string/ranking" />
+
+        <View style="@style/AppWidget.NavigationItemDeepLineGap" />
+
+        <CheckedTextView style="@style/AppWidget.NavigationItem"
+            android:id="@+id/topics_datail"
+            android:drawableStart="@drawable/main_nav_ic_job"
+            android:drawableLeft="@drawable/main_nav_ic_job"
+            android:text="@string/topics" />
+
+        <View style="@style/AppWidget.NavigationItemDeepLineGap" />
+
+        <CheckedTextView style="@style/AppWidget.NavigationItem"
+            android:id="@+id/about"
+            android:drawableStart="@drawable/main_nav_ic_job"
+            android:drawableLeft="@drawable/main_nav_ic_job"
+            android:text="@string/about" />
+
+        <View style="@style/AppWidget.NavigationItemDeepLineGap" />
+
+        <!--<View style="@style/AppWidget.ItemGap" />-->
+
+    </LinearLayout>
+
+</linhao.redridinghood.widget.ScrimInsetsScrollView>

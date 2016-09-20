@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/window_background_light">
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/content_img"
+        android:layout_width="100dip"
+        android:layout_height="100dip"
+        android:src="@mipmap/icon"
+        app:civ_border_color="#ffffff"
+        android:layout_marginTop="10dip"
+        app:civ_border_width="2dp"
+        android:layout_marginLeft="15dip"/>
+
+
+    <RelativeLayout
+        android:layout_marginLeft="10dip"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/content_img"
+        >
+
+        <TextView
+            android:id="@id/content_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/text_primary_light"
+            android:text="标题"
+            android:textSize="20dip" />
+        <TextView
+            android:id="@+id/content_collection"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="连载到第几集:"
+            android:textSize="16dip"
+            android:layout_marginTop="10dip"
+
+            android:textColor="@color/text_primary_light"
+            android:layout_below="@+id/content_title"
+            />
+
+
+        <TextView
+            android:id="@+id/content_download1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="下载数量:"
+            android:textSize="16dip"
+            android:layout_below="@+id/content_collection"
+            android:layout_marginTop="7dip"/>
+
+        <TextView
+            android:id="@+id/content_download"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="下载数量"
+            android:textSize="16dip"
+            android:layout_below="@+id/content_collection"
+            android:layout_toRightOf="@+id/content_download1"
+            android:textColor="@color/text_primary_light"
+            android:layout_marginLeft="15dip"
+            android:layout_marginTop="7dip"/>
+
+        <TextView
+            android:id="@+id/content_type1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="内容类型:"
+            android:textSize="16dip"
+            android:layout_below="@+id/content_download"
+            android:layout_marginTop="7dip"/>
+
+        <TextView
+            android:id="@+id/content_type"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="内容类型"
+            android:textSize="16dip"
+            android:layout_below="@+id/content_download"
+            android:layout_toRightOf="@+id/content_type1"
+            android:textColor="@color/text_primary_light"
+            android:layout_marginLeft="15dip"
+            android:layout_marginTop="7dip"/>
+
+        <TextView
+            android:id="@+id/content_zone1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="地区:"
+            android:textSize="16dip"
+            android:layout_below="@+id/content_type"
+            android:layout_alignRight="@+id/content_type1"
+            android:layout_marginTop="7dip"
+            android:layout_marginBottom="10dip"/>
+
+        <TextView
+            android:id="@+id/content_zone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="地区"
+            android:textSize="16dip"
+            android:layout_below="@+id/content_type"
+            android:layout_toRightOf="@+id/content_zone1"
+            android:layout_marginLeft="15dip"
+            android:textColor="@color/text_primary_light"
+            android:layout_marginTop="7dip"
+            android:layout_marginBottom="10dip"/>
+    </RelativeLayout>
+</RelativeLayout>

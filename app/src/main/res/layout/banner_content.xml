@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/view_page"
+        android:layout_width="match_parent"
+        android:layout_height="145dip"/>
+
+    <LinearLayout
+        android:layout_marginTop="138dp"
+        android:gravity="center_vertical"
+        android:background="#66000000"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="38dp">
+
+        <TextView
+            android:id="@+id/title"
+            android:text="我是萌萌的文字说明呀..我是萌萌的文字说明呀."
+            android:textColor="#ffffff"
+            android:maxLines="2"
+            android:ellipsize="end"
+            android:lineSpacingMultiplier="1.2"
+            android:gravity="center_vertical"
+            android:layout_marginLeft="5dp"
+            android:layout_weight="3"
+            android:layout_width="0dp"
+            android:layout_height="match_parent" />
+
+        <LinearLayout
+            android:layout_weight="1"
+            android:orientation="horizontal"
+            android:gravity="end|bottom"
+            android:padding="9dp"
+            android:layout_width="0dp"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:id="@+id/dot_indicator1"
+                android:src="@drawable/dot_focused"
+                android:layout_marginRight="8dp"
+                android:layout_width="7dp"
+                android:layout_height="7dp" />
+
+            <ImageView
+                android:id="@+id/dot_indicator2"
+                android:src="@drawable/dot_focused"
+                android:layout_marginRight="8dp"
+                android:layout_width="7dp"
+                android:layout_height="7dp" />
+
+            <ImageView
+                android:id="@+id/dot_indicator3"
+                android:src="@drawable/dot_focused"
+                android:layout_marginRight="8dp"
+                android:layout_width="7dp"
+                android:layout_height="7dp" />
+
+            <ImageView
+                android:id="@+id/dot_indicator4"
+                android:src="@drawable/dot_focused"
+                android:layout_marginRight="8dp"
+                android:layout_width="7dp"
+                android:layout_height="7dp" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+</FrameLayout>

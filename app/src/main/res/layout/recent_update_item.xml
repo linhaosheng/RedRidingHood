@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/window_background_light"
+    android:orientation="horizontal">
+        <TextView
+            android:layout_marginLeft="20dip"
+            android:layout_marginTop="20dip"
+            android:id="@+id/num"
+            android:layout_width="25dip"
+            android:layout_height="25dip"
+            android:text="1"
+            android:textColorHighlight="@color/white"
+            android:gravity="center"
+            android:textColor="@color/white"
+            android:background="@color/red"/>
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="25dip">
+
+            <TextView
+                android:layout_marginTop="10dip"
+                android:id="@+id/content_type"
+                android:layout_width="match_parent"
+                android:textColor="@color/text_primary_light"
+                android:layout_height="25dip"
+                android:textSize="15dip"
+                android:text="动漫类型"/>
+
+            <TextView
+                android:id="@+id/content_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/content_type"
+                android:layout_marginTop="10dip"
+                android:textSize="18dip"
+                android:layout_marginRight="100dip"
+                android:textColor="@color/text_primary_light"
+                android:layout_marginBottom="10dip"
+                android:text="标题"/>
+            <TextView
+                android:id="@+id/content_time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/content_type"
+                android:layout_alignParentRight="true"
+                android:textSize="15dip"
+                android:textColor="@color/list_divider_dark"
+                android:text="2016-08-27"
+                android:layout_marginTop="10dip"
+                android:gravity="right"
+                android:layout_marginBottom="10dip"
+                android:layout_marginRight="20dip"/>
+    </RelativeLayout>
+</LinearLayout>

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<tabs>
+    <tab
+        id="@+id/item_2016_broadcast"
+        icon="@drawable/time5"
+        title="2016" />
+    <tab
+        id="@+id/item_2015_broadcast"
+        icon="@drawable/time6"
+        title="2015" />
+    <tab
+        id="@+id/item_2014_broadcast"
+        icon="@drawable/time7"
+        title="2014" />
+    <tab
+        id="@+id/item_2013_broadcast"
+        icon="@drawable/time8"
+        title="2013" />
+</tabs>

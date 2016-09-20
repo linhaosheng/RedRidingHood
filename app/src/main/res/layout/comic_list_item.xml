@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/comic_img"
+        android:layout_width="75dip"
+        android:layout_height="75dip"
+        android:src="@mipmap/icon"
+        app:civ_border_color="#ffffff"
+        android:layout_marginTop="10dip"
+        app:civ_border_width="2dp"
+        android:layout_marginLeft="10dip"/>
+
+    <TextView
+        android:id="@+id/comic_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="20dip"
+        android:textColor="@color/content_black"
+        android:text="标题"
+        android:layout_toRightOf="@+id/comic_img"
+        android:layout_marginTop="10dip"
+        android:layout_marginLeft="10dip"/>
+
+    <TextView
+        android:id="@+id/episode"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/comic_img"
+        android:layout_below="@+id/comic_title"
+        android:layout_marginTop="10dip"
+        android:layout_marginLeft="10dip"
+        android:textSize="15dip"
+        android:text="连载8集"
+        android:textColor="@color/button_ripple"/>
+
+    <TextView
+        android:id="@+id/updateTime"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/comic_img"
+        android:layout_below="@+id/episode"
+        android:layout_marginTop="10dip"
+        android:layout_marginLeft="10dip"
+        android:textSize="15dip"
+        android:text="09-13 更新 "
+        android:textColor="@color/button_ripple"/>
+
+    <TextView
+        android:id="@+id/download"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/comic_img"
+        android:layout_below="@+id/updateTime"
+        android:layout_marginTop="10dip"
+        android:layout_marginLeft="10dip"
+        android:textSize="15dip"
+        android:text="下载次数:"
+        android:layout_marginBottom="10dip"
+        android:textColor="@color/button_ripple"/>
+
+    <TextView
+        android:id="@+id/downloadCount"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/download"
+        android:layout_below="@+id/updateTime"
+        android:layout_marginTop="10dip"
+        android:layout_marginLeft="20dip"
+        android:textSize="15dip"
+        android:text="1113342"
+        android:layout_marginBottom="10dip"
+        android:textColor="@color/button_ripple"/>
+</RelativeLayout>

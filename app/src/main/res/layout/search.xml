@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/main"
+    android:orientation="vertical">
+
+    <include layout="@layout/include_toolbar"/>
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/grey"
+
+        >
+        <EditText
+            android:id="@+id/search_content"
+            android:layout_width="match_parent"
+            android:layout_height="45dip"
+            android:layout_marginTop="10dip"
+            android:paddingLeft="50dip"
+            android:text=""
+            android:layout_marginBottom="10dip"/>
+
+        <ImageView
+            android:id="@+id/search_icon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dip"
+            android:layout_marginBottom="10dip"
+            android:layout_marginLeft="10dip"
+            android:src="@drawable/search"/>
+
+        <ImageView
+            android:id="@+id/delete"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/grey_delete"
+            android:layout_marginTop="10dip"
+            android:layout_marginRight="10dip"
+            android:layout_gravity="right"
+            android:visibility="gone"
+            />
+    </FrameLayout>
+   <android.support.v4.widget.SwipeRefreshLayout
+       android:id="@+id/search_refresh"
+       android:layout_width="match_parent"
+       android:layout_height="match_parent">
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/content"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+   </android.support.v4.widget.SwipeRefreshLayout>
+</LinearLayout>

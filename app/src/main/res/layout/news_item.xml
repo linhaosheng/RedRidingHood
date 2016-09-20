@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+   <de.hdodenhof.circleimageview.CircleImageView
+       android:id="@+id/new_img"
+       android:layout_width="80dip"
+       android:layout_height="80dip"
+       android:src="@mipmap/ic_placeholder"
+       app:civ_border_color="#ffffff"
+       android:layout_marginTop="10dip"
+       app:civ_border_width="2dp"
+       android:layout_marginLeft="10dip"/>
+
+    <TextView
+        android:id="@+id/new_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/new_img"
+        android:layout_marginLeft="10dip"
+        android:textSize="15dip"
+        android:textColor="@color/content_black"
+        android:layout_marginRight="10dip"
+        android:text="有些开发者可能也发现了,如果我们需要一个圆形的ImageButton的话"
+        android:layout_marginTop="10dip"/>
+
+    <TextView
+        android:id="@+id/new_content"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/new_img"
+        android:layout_below="@+id/new_title"
+        android:layout_marginLeft="10dip"
+        android:layout_marginRight="10dip"
+        android:text="如果ImageButton的图标是固定不变的，我们完全可以让设计师给我设计一个圆形的图片，然后直接设置再ImageButton上就可以了"
+        android:layout_marginTop="10dip"/>
+
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_toRightOf="@+id/new_img"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/new_content"
+        android:gravity="right"
+        android:layout_marginRight="10dip"
+        android:layout_marginTop="20dip"
+        android:layout_marginBottom="10dip">
+
+    <TextView
+        android:id="@+id/new_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="2016-9-3"
+        />
+    </LinearLayout>
+</RelativeLayout>

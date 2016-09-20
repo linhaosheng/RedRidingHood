@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">红帽社区</string>
+
+    <string name="add_serial">新增连载</string>
+    <string name="add_end">新增完结</string>
+    <string name="recommend_serial">推荐连载</string>
+    <string name="recommend_end">推荐完结</string>
+
+    <string name="loadfail">加载失败</string>
+    <string name="title">红旅动漫</string>
+    <string name="exit">再按一次退出</string>
+    <string name="load_more_fail">加载失败,重新加载</string>
+
+    <string name="week_update">一周更新</string>
+    <string name="recent_update">最新更新</string>
+    <string name="hot_new_animate">热门更新</string>
+    <string name="comic_list">连载动漫</string>
+    <string name="end_comic">完结动漫</string>
+    <string name="news_list">新闻列表</string>
+    <string name="ranking">榜单咨询</string>
+    <string name="topics">专题列表</string>
+    <string name="topics_detail">专题列表详情</string>
+    <string name="comic_detail">动漫内容</string>
+    <string name="about">关于</string>
+    <string name="logout">退出</string>
+
+    <string name="nodata">没有数据了</string>
+    <string name="load_fail">加载出错</string>
+    <string name="week_update_title">一周更新</string>
+    <string name="monday">一</string>
+    <string name="tuesday">二</string>
+    <string name="wednesday">三</string>
+    <string name="thursday">四</string>
+    <string name="friday">五</string>
+    <string name="saturday">六</string>
+    <string name="sunday">日</string>
+    <string name="load_more_endless">加载更多</string>
+
+    <string name="october">十月新播</string>
+    <string name="july">七月新播</string>
+    <string name="april">四月新播</string>
+    <string name="january">一月新播</string>
+    
+    <string name="edition">版本</string>
+    <string name="letter">字母</string>
+    <string name="sort">排序</string>
+    <string name="type">类型</string>
+    
+    <string name="ftp">FTP下载</string>
+    <string name="baidu">百度网盘下载</string>
+    <string name="magnetic">磁力链接下载</string>
+    <string name="search">搜索</string>
+    <string name="search_title">正在搜索</string>
+    <string name="webview">播放器</string>
+</resources>

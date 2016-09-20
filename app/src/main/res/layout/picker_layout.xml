@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/picker_rel"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginTop="-620dp"
+    android:background="#99232323"
+    android:visibility="gone" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@color/tool_color" >
+
+        <Button
+            android:paddingTop="3dip"
+            android:id="@+id/cancel"
+            android:text="取消"
+            android:textSize="15dip"
+            android:background="@color/button_ripple"
+            android:layout_marginLeft="10dip"
+            android:textColor="@color/red"
+            android:layout_marginTop="5dip"
+            android:layout_marginBottom="10dip"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+            <Button
+                android:id="@+id/certain"
+                android:text="确定"
+                android:layout_marginTop="5dip"
+                android:layout_marginRight="10dip"
+                android:textSize="15dip"
+                android:layout_alignParentRight="true"
+                android:layout_width="wrap_content"
+                android:background="@color/colorPrimary"
+                android:textColor="@color/white"
+                android:layout_height="wrap_content" />
+
+        <linhao.redridinghood.widget.PickerScrollView
+            android:id="@+id/pickerscrlllview"
+            android:layout_width="match_parent"
+            android:layout_height="175dp"
+            android:background="@color/tool_color"
+            android:layout_below="@+id/cancel"/>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:layout_below="@id/pickerscrlllview"
+            android:layout_marginTop="-95dp"
+            android:background="@drawable/picker_tv_bg" />
+
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="5dp"
+            android:layout_below="@id/pickerscrlllview" />
+    </RelativeLayout>
+
+</RelativeLayout>
